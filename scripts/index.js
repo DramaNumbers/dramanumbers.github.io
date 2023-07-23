@@ -5235,7 +5235,7 @@ function selectNumber() {
         if (index < LANDLINE_NUMBERS.length) {
             numberLabel.value = LANDLINE_NUMBERS[index];
         } else {
-            numberLabel.value = MOBILE_NUMBERS[index];
+            numberLabel.value = MOBILE_NUMBERS[index - LANDLINE_NUMBERS.length];
         }
     }
 }
