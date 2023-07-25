@@ -5224,10 +5224,10 @@ const MOBILE_NUMBERS = [
 let type = 0;
 
 function selectNumber() {
-    if (type == 1) {
+    if (type === 1) {
         let index = Math.floor(Math.random() * LANDLINE_NUMBERS.length);
         numberLabel.value = LANDLINE_NUMBERS[index];
-    } else if (type == 2) {
+    } else if (type === 2) {
         let index = Math.floor(Math.random() * MOBILE_NUMBERS.length);
         numberLabel.value = MOBILE_NUMBERS[index];
     } else {
@@ -5242,7 +5242,11 @@ function selectNumber() {
 
 window.addEventListener('load', () => selectNumber());
 typeInput.addEventListener('change', (event) => {
-    type = parseInt(event.target.value);
+    let newType = parseInt(event.target.value);
+    if (newType !== type) {
+        type = newType;
+        selectNumber();
+    }
 });
 copyButton.addEventListener('click', () => navigator.clipboard.writeText(numberLabel.value));
 regenerateButton.addEventListener('click', () => selectNumber());
