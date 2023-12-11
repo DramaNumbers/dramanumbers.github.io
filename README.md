@@ -12,4 +12,4 @@ If you are interested in the official documents, take a look [here](https://www.
 
 ## Domains
 
-The **primary domain** of this project now is **[https://dramanumbers.org](https://dramanumbers.org)**, but the standard GitHub Pages domain [https://dramanumbers.github.io](https://dramanumbers.github.io) remains functional and is kept as a fallback. Therefore the name of this repository hasn't changed and won't change in the future either.
+The **primary domain** of this project now is **[https://DramaNumbers.org](https://dramanumbers.org)**, but the standard GitHub Pages domain [https://dramanumbers.github.io](https://dramanumbers.github.io) remains functional and is kept as a fallback. Therefore the name of this repository hasn't changed and won't change in the future either.
